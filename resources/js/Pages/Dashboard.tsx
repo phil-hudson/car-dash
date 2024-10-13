@@ -1,4 +1,4 @@
-import { Button } from '@/Components/ui/button';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -6,7 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/Components/ui/card';
+} from '@/components/ui/card';
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -14,9 +14,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/Components/ui/dropdown-menu';
-import { TabsList, TabsTrigger } from '@/Components/ui/tabs';
-import AppLayout from '@/Layouts/AppLayout';
+} from '@/components/ui/dropdown-menu';
+import { TabsList, TabsTrigger } from '@/components/ui/tabs';
+import AppLayout from '@/layouts/AppLayout';
 import { router } from '@inertiajs/react';
 import { Tabs } from '@radix-ui/react-tabs';
 import { File, ListFilter, PlusCircle } from 'lucide-react';
@@ -90,7 +90,15 @@ export default function Dashboard() {
                 Get started now by requesting a quote
               </CardDescription>
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              {/* <DataTableSkeleton
+                columnCount={5}
+                searchableColumnCount={0}
+                filterableColumnCount={4}
+                cellWidths={['10rem', '40rem', '12rem', '12rem', '8rem']}
+                shrinkZero
+              /> */}
+            </CardContent>
             <CardFooter>
               <div className="text-xs text-muted-foreground">
                 Showing <strong>1-10</strong> of <strong>32</strong> quotes

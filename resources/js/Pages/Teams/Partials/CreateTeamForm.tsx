@@ -1,14 +1,14 @@
+import ActionMessage from '@/components/ActionMessage';
+import FormSection from '@/components/FormSection';
+import InputError from '@/components/InputError';
+import InputLabel from '@/components/InputLabel';
+import PrimaryButton from '@/components/PrimaryButton';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
+import useTypedPage from '@/hooks/useTypedPage';
 import { useForm } from '@inertiajs/react';
-import React from 'react';
-import useRoute from '@/Hooks/useRoute';
-import useTypedPage from '@/Hooks/useTypedPage';
-import ActionMessage from '@/Components/ActionMessage';
-import FormSection from '@/Components/FormSection';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
 import classNames from 'classnames';
+import React from 'react';
 
 export default function CreateTeamForm() {
   const route = useRoute();

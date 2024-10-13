@@ -1,5 +1,5 @@
+import ApplicationLogo from '@/components/ApplicationLogo';
 import React from 'react';
-import ApplicationLogo from '@/Components/ApplicationLogo';
 
 export default function Welcome() {
   return (

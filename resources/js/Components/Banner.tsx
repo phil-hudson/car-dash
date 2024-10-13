@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import useTypedPage from '@/hooks/useTypedPage';
 import classNames from 'classnames';
-import useTypedPage from '@/Hooks/useTypedPage';
+import React, { useState } from 'react';
 
 export default function Banner() {
   const [show, setShow] = useState(true);

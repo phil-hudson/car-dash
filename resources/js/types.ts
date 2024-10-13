@@ -32,13 +32,13 @@ export interface Auth {
   >;
 }
 
-export type InertiaSharedProps<T = {}> = T & {
+export type InertiaSharedProps<T> = T & {
   jetstream: {
     canCreateTeams: boolean;
     canManageTwoFactorAuthentication: boolean;
     canUpdatePassword: boolean;
     canUpdateProfileInformation: boolean;
-    flash: any;
+    flash: unknown;
     hasAccountDeletionFeatures: boolean;
     hasApiFeatures: boolean;
     hasTeamFeatures: boolean;
@@ -47,8 +47,8 @@ export type InertiaSharedProps<T = {}> = T & {
     hasEmailVerification: boolean;
   };
   auth: Auth;
-  errorBags: any;
-  errors: any;
+  errorBags: unknown;
+  errors: unknown;
 };
 
 export interface Session {
@@ -93,4 +93,32 @@ export interface TeamInvitation {
   role: Nullable<string>;
   created_at: DateTime;
   updated_at: DateTime;
+}
+
+export interface SearchParams {
+  [key: string]: string | string[] | undefined;
+}
+
+export interface Option {
+  label: string;
+  value: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  withCount?: boolean;
+}
+
+export interface DataTableFilterField<TData> {
+  label: string;
+  value: keyof TData;
+  placeholder?: string;
+  options?: Option[];
+}
+
+export interface DataTableFilterOption<TData> {
+  id: string;
+  label: string;
+  value: keyof TData;
+  options: Option[];
+  filterValues?: string[];
+  filterOperator?: string;
+  isMulti?: boolean;
 }

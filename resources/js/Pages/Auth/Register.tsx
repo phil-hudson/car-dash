@@ -1,14 +1,14 @@
-import { Link, useForm, Head } from '@inertiajs/react';
+import AuthenticationCard from '@/components/AuthenticationCard';
+import Checkbox from '@/components/Checkbox';
+import InputError from '@/components/InputError';
+import InputLabel from '@/components/InputLabel';
+import PrimaryButton from '@/components/PrimaryButton';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
+import useTypedPage from '@/hooks/useTypedPage';
+import { Head, Link, useForm } from '@inertiajs/react';
 import classNames from 'classnames';
 import React from 'react';
-import useRoute from '@/Hooks/useRoute';
-import useTypedPage from '@/Hooks/useTypedPage';
-import AuthenticationCard from '@/Components/AuthenticationCard';
-import Checkbox from '@/Components/Checkbox';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import InputError from '@/Components/InputError';
 
 export default function Register() {
   const page = useTypedPage();

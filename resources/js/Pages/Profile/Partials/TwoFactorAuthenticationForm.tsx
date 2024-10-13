@@ -1,17 +1,17 @@
+import ActionSection from '@/components/ActionSection';
+import ConfirmsPassword from '@/components/ConfirmsPassword';
+import DangerButton from '@/components/DangerButton';
+import InputError from '@/components/InputError';
+import InputLabel from '@/components/InputLabel';
+import PrimaryButton from '@/components/PrimaryButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import TextInput from '@/components/TextInput';
+import useTypedPage from '@/hooks/useTypedPage';
 import { router } from '@inertiajs/core';
 import { useForm } from '@inertiajs/react';
 import axios from 'axios';
 import classNames from 'classnames';
 import React, { useState } from 'react';
-import ActionSection from '@/Components/ActionSection';
-import ConfirmsPassword from '@/Components/ConfirmsPassword';
-import DangerButton from '@/Components/DangerButton';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import SecondaryButton from '@/Components/SecondaryButton';
-import TextInput from '@/Components/TextInput';
-import useTypedPage from '@/Hooks/useTypedPage';
 
 interface Props {
   requiresConfirmation: boolean;

@@ -1,6 +1,6 @@
+import SectionTitle from '@/components/SectionTitle';
 import classNames from 'classnames';
 import React, { PropsWithChildren } from 'react';
-import SectionTitle from '@/Components/SectionTitle';
 
 interface Props {
   title: string;

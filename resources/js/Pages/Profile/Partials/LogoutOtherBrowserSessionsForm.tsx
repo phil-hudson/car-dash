@@ -1,15 +1,15 @@
+import ActionMessage from '@/components/ActionMessage';
+import ActionSection from '@/components/ActionSection';
+import DialogModal from '@/components/DialogModal';
+import InputError from '@/components/InputError';
+import PrimaryButton from '@/components/PrimaryButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
+import { Session } from '@/types';
 import { useForm } from '@inertiajs/react';
 import classNames from 'classnames';
 import React, { useRef, useState } from 'react';
-import useRoute from '@/Hooks/useRoute';
-import ActionMessage from '@/Components/ActionMessage';
-import ActionSection from '@/Components/ActionSection';
-import DialogModal from '@/Components/DialogModal';
-import InputError from '@/Components/InputError';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import SecondaryButton from '@/Components/SecondaryButton';
-import { Session } from '@/types';
 
 interface Props {
   sessions: Session[];

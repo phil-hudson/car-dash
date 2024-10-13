@@ -1,8 +1,8 @@
+import SectionBorder from '@/components/SectionBorder';
+import AppLayout from '@/layouts/AppLayout';
 import DeleteTeamForm from '@/Pages/Teams/Partials/DeleteTeamForm';
 import TeamMemberManager from '@/Pages/Teams/Partials/TeamMemberManager';
 import UpdateTeamNameForm from '@/Pages/Teams/Partials/UpdateTeamNameForm';
-import SectionBorder from '@/Components/SectionBorder';
-import AppLayout from '@/Layouts/AppLayout';
 import {
   JetstreamTeamPermissions,
   Role,

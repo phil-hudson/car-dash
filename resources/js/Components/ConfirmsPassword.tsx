@@ -1,12 +1,12 @@
+import DialogModal from '@/components/DialogModal';
+import InputError from '@/components/InputError';
+import PrimaryButton from '@/components/PrimaryButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
 import axios from 'axios';
 import classNames from 'classnames';
 import React, { PropsWithChildren, useRef, useState } from 'react';
-import useRoute from '@/Hooks/useRoute';
-import DialogModal from '@/Components/DialogModal';
-import InputError from '@/Components/InputError';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import SecondaryButton from '@/Components/SecondaryButton';
 
 interface Props {
   title?: string;

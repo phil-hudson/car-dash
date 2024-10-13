@@ -1,9 +1,9 @@
-import { Link, useForm, Head } from '@inertiajs/react';
+import AuthenticationCard from '@/components/AuthenticationCard';
+import PrimaryButton from '@/components/PrimaryButton';
+import useRoute from '@/hooks/useRoute';
+import { Head, Link, useForm } from '@inertiajs/react';
 import classNames from 'classnames';
 import React from 'react';
-import useRoute from '@/Hooks/useRoute';
-import AuthenticationCard from '@/Components/AuthenticationCard';
-import PrimaryButton from '@/Components/PrimaryButton';
 
 interface Props {
   status: string;

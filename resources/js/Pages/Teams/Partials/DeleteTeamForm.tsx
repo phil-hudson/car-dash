@@ -1,8 +1,8 @@
-import useRoute from '@/Hooks/useRoute';
-import ActionSection from '@/Components/ActionSection';
-import ConfirmationModal from '@/Components/ConfirmationModal';
-import DangerButton from '@/Components/DangerButton';
-import SecondaryButton from '@/Components/SecondaryButton';
+import ActionSection from '@/components/ActionSection';
+import ConfirmationModal from '@/components/ConfirmationModal';
+import DangerButton from '@/components/DangerButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import useRoute from '@/hooks/useRoute';
 import { Team } from '@/types';
 import { useForm } from '@inertiajs/react';
 import classNames from 'classnames';

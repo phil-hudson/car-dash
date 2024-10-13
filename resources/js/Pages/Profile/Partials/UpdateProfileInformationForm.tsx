@@ -1,17 +1,17 @@
+import ActionMessage from '@/components/ActionMessage';
+import FormSection from '@/components/FormSection';
+import InputError from '@/components/InputError';
+import InputLabel from '@/components/InputLabel';
+import PrimaryButton from '@/components/PrimaryButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
+import useTypedPage from '@/hooks/useTypedPage';
+import { User } from '@/types';
 import { router } from '@inertiajs/core';
 import { Link, useForm } from '@inertiajs/react';
 import classNames from 'classnames';
 import React, { useRef, useState } from 'react';
-import useRoute from '@/Hooks/useRoute';
-import ActionMessage from '@/Components/ActionMessage';
-import FormSection from '@/Components/FormSection';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import SecondaryButton from '@/Components/SecondaryButton';
-import { User } from '@/types';
-import useTypedPage from '@/Hooks/useTypedPage';
 
 interface Props {
   user: User;

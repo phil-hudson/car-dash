@@ -1,12 +1,12 @@
 import '../css/app.css';
 import './bootstrap';
 
-import { RouteContext } from '@/Hooks/useRoute';
+import { RouteContext } from '@/hooks/useRoute';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ThemeProvider } from './Components/theme-provider';
+import { ThemeProvider } from './components/theme-provider';
 
 const appName =
   window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';

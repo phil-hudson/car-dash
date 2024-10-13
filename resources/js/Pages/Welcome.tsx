@@ -1,8 +1,7 @@
-import { Link } from '@inertiajs/react';
+import useRoute from '@/hooks/useRoute';
+import useTypedPage from '@/hooks/useTypedPage';
+import { Head, Link } from '@inertiajs/react';
 import React from 'react';
-import useRoute from '@/Hooks/useRoute';
-import useTypedPage from '@/Hooks/useTypedPage';
-import { Head } from '@inertiajs/react';
 
 interface Props {
   canLogin: boolean;

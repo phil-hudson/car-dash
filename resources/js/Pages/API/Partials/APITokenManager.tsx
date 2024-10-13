@@ -1,22 +1,22 @@
+import ActionMessage from '@/components/ActionMessage';
+import ActionSection from '@/components/ActionSection';
+import Checkbox from '@/components/Checkbox';
+import ConfirmationModal from '@/components/ConfirmationModal';
+import DangerButton from '@/components/DangerButton';
+import DialogModal from '@/components/DialogModal';
+import FormSection from '@/components/FormSection';
+import InputError from '@/components/InputError';
+import InputLabel from '@/components/InputLabel';
+import PrimaryButton from '@/components/PrimaryButton';
+import SecondaryButton from '@/components/SecondaryButton';
+import SectionBorder from '@/components/SectionBorder';
+import TextInput from '@/components/TextInput';
+import useRoute from '@/hooks/useRoute';
+import useTypedPage from '@/hooks/useTypedPage';
+import { ApiToken } from '@/types';
 import { useForm } from '@inertiajs/react';
 import classNames from 'classnames';
 import React, { useState } from 'react';
-import useRoute from '@/Hooks/useRoute';
-import ActionMessage from '@/Components/ActionMessage';
-import ActionSection from '@/Components/ActionSection';
-import Checkbox from '@/Components/Checkbox';
-import ConfirmationModal from '@/Components/ConfirmationModal';
-import DangerButton from '@/Components/DangerButton';
-import DialogModal from '@/Components/DialogModal';
-import FormSection from '@/Components/FormSection';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import SecondaryButton from '@/Components/SecondaryButton';
-import SectionBorder from '@/Components/SectionBorder';
-import { ApiToken } from '@/types';
-import useTypedPage from '@/Hooks/useTypedPage';
 
 interface Props {
   tokens: ApiToken[];
