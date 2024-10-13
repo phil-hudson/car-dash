@@ -1,16 +1,18 @@
-import { router } from '@inertiajs/core';
-import { Link, Head } from '@inertiajs/react';
-import classNames from 'classnames';
-import React, { PropsWithChildren, useState } from 'react';
-import useRoute from '@/Hooks/useRoute';
-import useTypedPage from '@/Hooks/useTypedPage';
 import ApplicationMark from '@/Components/ApplicationMark';
 import Banner from '@/Components/Banner';
 import Dropdown from '@/Components/Dropdown';
 import DropdownLink from '@/Components/DropdownLink';
 import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
+import { ModeToggle } from '@/Components/ui/mode-toggle';
+import useRoute from '@/Hooks/useRoute';
+import useTypedPage from '@/Hooks/useTypedPage';
 import { Team } from '@/types';
+import { router } from '@inertiajs/core';
+import { Head, Link } from '@inertiajs/react';
+import classNames from 'classnames';
+import React, { PropsWithChildren, useState } from 'react';
+import PageContentContainer from './PageContentContainer';
 
 interface Props {
   title: string;
@@ -76,6 +78,8 @@ export default function AppLayout({
               </div>
 
               <div className="hidden sm:flex sm:items-center sm:ml-6">
+                <ModeToggle />
+
                 <div className="ml-3 relative">
                   {/* <!-- Teams Dropdown --> */}
                   {page.props.jetstream.hasTeamFeatures ? (
@@ -408,7 +412,9 @@ export default function AppLayout({
         ) : null}
 
         {/* <!-- Page Content --> */}
-        <main>{children}</main>
+        <main>
+          <PageContentContainer>{children}</PageContentContainer>
+        </main>
       </div>
     </div>
   );

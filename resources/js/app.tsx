@@ -6,6 +6,7 @@ import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { ThemeProvider } from './Components/theme-provider';
 
 const appName =
   window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
@@ -25,7 +26,9 @@ createInertiaApp({
     return root.render(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       <RouteContext.Provider value={(window as any).route}>
-        <App {...props} />
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <App {...props} />
+        </ThemeProvider>
       </RouteContext.Provider>,
     );
   },
