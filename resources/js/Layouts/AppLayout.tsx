@@ -121,7 +121,7 @@ export default function AppLayout({
                             {/* <!-- Team Settings --> */}
                             <DropdownLink
                               href={route('teams.show', [
-                                page.props.auth.user?.current_team!,
+                                page.props.auth.user?.current_team,
                               ])}
                             >
                               Team Settings
@@ -350,7 +350,7 @@ export default function AppLayout({
                     {/* <!-- Team Settings --> */}
                     <ResponsiveNavLink
                       href={route('teams.show', [
-                        page.props.auth.user?.current_team!,
+                        page.props.auth.user?.current_team,
                       ])}
                       active={route().current('teams.show')}
                     >
