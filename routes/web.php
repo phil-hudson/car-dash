@@ -25,4 +25,8 @@ Route::middleware([
     Route::get('/request-a-quote', function () {
         return Inertia::render('RequestAQuote');
     })->name('request-a-quote');
+
+    Route::get('/quotation-request/{quotationRequest}', function () {
+        return Inertia::render('QuotationRequest');
+    })->name('quotation-request.show');
 });

@@ -16,14 +16,12 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { router } from '@inertiajs/react';
 import { Tabs } from '@radix-ui/react-tabs';
-import { File, ListFilter, PlusCircle } from 'lucide-react';
+import { File, ListFilter } from 'lucide-react';
 import React from 'react';
-import { route } from 'ziggy-js';
-import QuotationRequestsDatatable from './quotation-requests-data-table';
+import SupplierQuotationRequestsDatatable from './supplier-quotation-requests-data-table';
 
-export default function QuotationRequestsTablecard() {
+export default function SupplierQuotationRequestsTablecard() {
   return (
     <div className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
       <Tabs defaultValue="all">
@@ -62,28 +60,18 @@ export default function QuotationRequestsTablecard() {
                 Export
               </span>
             </Button>
-            <Button
-              size="sm"
-              className="h-8 gap-1"
-              onClick={() => router.visit(route('request-a-quote'))}
-            >
-              <PlusCircle className="h-3.5 w-3.5" />
-              <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-                Request A Quote
-              </span>
-            </Button>
           </div>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle>Quotation Requests</CardTitle>
+            <CardTitle>Customer Quotation Requests</CardTitle>
             <CardDescription>
-              Get started now by requesting a quote
+              Respond to quotation requests here.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <QuotationRequestsDatatable />
+            <SupplierQuotationRequestsDatatable />
           </CardContent>
           <CardFooter>
             <div className="text-xs text-muted-foreground">

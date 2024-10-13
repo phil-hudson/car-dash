@@ -1,4 +1,5 @@
-import QuotationRequestsTablecard from '@/components/quotation-requests/quotation-requests-tablecard';
+import QuotationRequestsTablecard from '@/components/quotation-requests/customer/quotation-requests-tablecard';
+import SupplierQuotationRequestsTablecard from '@/components/quotation-requests/supplier/supplier-quotation-requests-tablecard';
 import AppLayout from '@/layouts/AppLayout';
 import React from 'react';
 
@@ -13,6 +14,8 @@ export default function Dashboard() {
       )}
     >
       <QuotationRequestsTablecard />
+      <div className="my-8" />
+      <SupplierQuotationRequestsTablecard />
     </AppLayout>
   );
 }
