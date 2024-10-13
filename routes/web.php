@@ -21,4 +21,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+
+    Route::get('/request-a-quote', function () {
+        return Inertia::render('RequestAQuote');
+    })->name('request-a-quote');
 });
